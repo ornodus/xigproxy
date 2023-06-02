@@ -8,8 +8,6 @@ RUN tar -xzvf bin.tar.gz
 
 FROM alpine
 
-COPY root /
-
 RUN adduser -S -D -H -h /xmrig-proxy xmrig && \
     apk update && \
     apk upgrade && \
